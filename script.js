@@ -134,7 +134,7 @@ const drop = (e) => {
     }
   }
   //Win
-  if (count == 6) {
+  if (count == 4) {
     result.innerText = `ನೀವು ಚಿತ್ರಗಳನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಹೊಂದಾಣಿಕೆ ಮಾಡಿದ್ದಿರಿ!`;
     stopGame();
   }
@@ -146,7 +146,7 @@ const creator = () => {
   dropContainer.innerHTML = "";
   let randomData = [];
   //for string random values in array
-  for (let i = 1; i <= 6; i++) {
+  for (let i = 1; i <= 4; i++) {
     let randomValue = randomValueGenerator();
     if (!randomData.includes(randomValue)) {
       randomData.push(randomValue);
